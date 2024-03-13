@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style/tstyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/qstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="quiz-day">
+        <img id="logo" src="images/qd.png">
+    </div>
+    <section id="search-section">
+        <div class="search__div">
+        <div class="inp-div">
+        
+        <form>
+            <input type="text" name="searchBar" id="search" placeholder="search..." onkeyup="search_topic()">
+        </form>
+        <i class="material-icons">search</i>
+        </div>
+        </div>
+        <center>
+        <div class="topic-list" id="topic-list">            
+            <a  class="topic-link" href="topics/republicmal.html">
+                <div class="topic">
+                    <img src="images/republicday.png">
+                    <div class="topic-name"><h2>Republic Day Malayalam </h2></div>
+                </div>
+            </a>
+            <a  class="topic-link" href="topics/spaceeng.html">
+                <div class="topic">
+                    <img src="images/republicday.png">
+                    <div class="topic-name"><h2>Space quiz (English)</h2></div>
+                </div>
+            </a>
+            <a  class="topic-link" href="topics/spacemal.html">
+                <div class="topic">
+                    <img src="images/republicday.png">
+                    <div class="topic-name"><h2>Space quiz Malayalam </h2></div>
+                </div>
+            </a>
+            <a  class="topic-link" href="topics/nobelprizeeng.html">
+                <div class="topic">
+                    <img src="images/republicday.png">
+                    <div class="topic-name"><h2>Nobel prize quiz(English) </h2></div>
+                </div>
+            </a>
+        </div>
+    </center>
+    </section>
+
+
+<div class="container">
+    <div class="topic-list-body " id="topic-list-body"> 
+        <a  class="topic-link" href="topics/nobelprizeeng.html">
+            <div class="topic-body">
+                <img src="images/republicday.png">
+                <div class="topic-name"><h2>Nobel prize quiz(English)</h2></div>            
+            </div>
+        </a>
+    </div>
+    <div class="topic-list-body " id="topic-list-body"> 
+        <a  class="topic-link" href="topics/republicmal.html">
+            <div class="topic-body">
+                <img src="images/republicday.png">
+                <div class="topic-name"><h2>Republic day malayalam quiz</h2></div>            
+            </div>
+        </a>
+    </div>
+    <div class="topic-list-body " id="topic-list-body"> 
+        <a  class="topic-link" href="topics/spaceeng.html">
+            <div class="topic-body">
+                <img src="images/republicday.png">
+                <div class="topic-name"><h2>Space quiz (English)</h2></div>            
+            </div>
+        </a>
+    </div>
+    <div class="topic-list-body " id="topic-list-body"> 
+        <a  class="topic-link" href="topics/spacemal.html">
+            <div class="topic-body">
+                <img src="images/republicday.png">
+                <div class="topic-name"><h2>Space malayalam quiz</h2></div>            
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div style="height: 50px;">
+    </div>
+    <nav class="nav">
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">home</i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a onclick="searchBar()" class="nav__link">
+            <i class="material-icons nav-icon">search</i>
+            <span class="nav-text">Search</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">monetization_on</i>
+            <span class="nav-text">Donate</span>
+        </a>
+    </nav>
+    <script src="js/qd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
