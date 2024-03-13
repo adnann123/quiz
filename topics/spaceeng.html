@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/qstyle.css">
+    <link type="text/css" rel="stylesheet" href="../style/tstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="search-q">
+        
+        <div class="search-q-div">
+            <div class="s-q">           
+            <input type="text" id="search-q" placeholder="search questions" onkeyup="search_q()">
+            <i class="material-icons">search</i>
+            </div>
+        </div>
+
+        <div id="searched-questions">
+                
+        </div>
+
+    </div>
+
+    <h1>Topic name</h1>
+
+
+
+
+
+    <div>
+        <div class="question-div">
+            <p class="question">
+                Approximately how many miles (or kilometers) are there in a light-year?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A light-year is the distance light travels in a vacuum in a year, about 5.9 trillion miles, or 9.5 trillion kilometers.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Asteroids are also referred to as what?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Minor planets or planetoids.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which star is nearest to Earth?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">  Alpha Centauri.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the study of the stars, planets, and galaxies?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Astronomy.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How is the distance between the sun and Earth measured?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> In Astronomical Units (AU).
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What accounts for approximately 85% of the matter in the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Dark matter.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Uranus has only been visited by what spacecraft?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The Voyager 2.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the smallest planet within our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mercury.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which are the four “gas giant” planets?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Jupiter, Saturn, Uranus, and Neptune.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the third brightest celestial object in our sky?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which theory involves a passing star pulling dust and debris from the forming sun?        
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The Tidal Theory.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Phobos and Deimos are the Moons of which planet?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mars
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the densest planet in our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Earth.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How old is the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Roughly 4.6 billion years old.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet is larger, Neptune or Saturn?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Saturn.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What manned U.S. space program eventually put 12 men on the Moon?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Apollo.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the brightest planet in the night’s sky?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How does a meteor become a meteorite?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> It hits the Earth’s surface.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What elements is the sun composed of?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Primarily hydrogen and helium, with some other trace elements.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Where can the biosphere be found?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The lower part of the atmosphere, all of the hydrosphere, and the upper part of the lithosphere.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What are the names of Jupiter’s four largest moons?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Europa, Ganymede, Callisto, and Io.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                From 1978 to 1999, which planet was farthest from the Sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Neptune.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which constellation contains the stars Castor and Pollux?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Gemini.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who described Saturn’s rings as the “ears of a teacup?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">” Galileo.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many Earths could fit inside the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> One million.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planets have rings around them?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Jupiter, Saturn, Uranus, and Neptune.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long is one year on Jupiter?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 12 years.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What color is the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The sun appears white to the eye, but it is a mixture of all colors.       
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Why does Mercury have craters?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Its atmosphere is too thin to burn up meteoroids.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What do you call the path traveled by a celestial body in space?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> An orbit.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What color is the sunset on Mars?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Dust in the Martian atmosphere has fine particles that permit blue light to penetrate the atmosphere more efficiently than longer-wavelength colors.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet spins backward relative to the others?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                The moon called Titan orbits which planet?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Saturn.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many moons does Earth have?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> One.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which definition of a “planet” does Pluto fail to meet?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Pluto has failed to clear the neighborhood around its orbit.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                The planets make up what percentage of the mass in our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 0.135%
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet is known as the Evening Star?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Where can you go to see projections of the night sky?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A planetarium.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the appearance of a comet called?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> An apparition.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What does NASA stand for?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> National Aeronautics and Space Administration.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What color is Saturn?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Pale yellow.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the sun’s outermost atmosphere called?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Corona.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is a highly magnetized rotating neutron star?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A pulsar.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many planets are in the Solar System?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Eight planets.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the second smallest planet within our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mars.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is space junk?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Any human-made object stuck orbiting Earth.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which astrological sign becomes visible starting January 21st?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Aquarius.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What phenomena keeps the planets in steady orbit around the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Gravity.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What term do astronomers use to describe the two times a year when day and night are of equal length?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Equinox.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet has the most moons?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Saturn.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What causes a solar eclipse?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The moon moves between the sun and Earth, casting a shadow on Earth.       
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who invented astronomy?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The ancient Greeks.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long does a solar eclipse last?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Seven and a half minutes.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Where is the Oort Cloud located?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Just beyond Pluto.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is a comet made of?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A mixture of ices, dust, and rocks.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Name the three most famous asteroids?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Ceres, Pallas, Vesta.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What does Uranus smell like?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Rotten eggs.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Vesta is which type of celestial body?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> An asteroid.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What year boasted the first woman in space?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 1963.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What are the clouds of interstellar gas and dust that emit light in different colors called?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> An emission nebula is a cloud of high-temperature gas.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What causes high and low tides?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Gravity.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the name of Pluto’s largest moon?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Charon.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which constellation is shaped like a winged horse?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Pegasus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How hot is the sun’s core?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> More than 27 million degrees Fahrenheit (15 million degrees Celsius).      
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                When did the Space Age begin?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The Space Age began on October 4, 1957, when the Soviet Union launched Sputnik 1.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                In what year did Pluto become reclassified as a dwarf planet?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 2006.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What are the explosions of energy released by the sun’s magnetic fields called?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Solar flares.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet is closest in size to Earth?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                There have been more missions to this planet versus any other planet?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mars.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How much of the Milky Way is visible?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> You can only see 0.000003% percent of it.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the term for the condition when three celestial bodies are arranged in a straight line?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Syzygy.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many of our planets can be seen without a telescope?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Five. Mercury, Venus, Mars, Jupiter, and Saturn.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet is known as the Morning Star?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Why isn’t Galileo credited with the discovery of Neptune?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Galileo seems to have mistaken Neptune for a fixed star.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long does it take the sun’s rays to reach Earth?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Eight minutes.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet rotates on its side?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Uranus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the largest start within our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The sun.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long does it take the moon to pass through all its phases?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 29 days.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                If you weighed 200 pounds on Earth, how much would you weigh on Mars?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 76 pounds.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first person to travel into space?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Yuri Gagarin.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many Earths could fit inside the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> About a million.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What causes the moon to shine?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Reflected sunlight.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                The atmosphere in Mars is mostly composed of what?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> According to astronomer Gerard P. Kuiperascertained, the Martian atmosphere is composed mainly of carbon dioxide.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet has the most volcanoes?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet has supersonic winds?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Neptune.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which are the four “terrestrial” planets?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mercury, Venus, Mars, and Earth.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which celestial body within the solar system has the most mass?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The sun.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first person to walk on the moon?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Neil Armstrong.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What do you call a large number of meteoroids occurring at the same time and place?       
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A meteor shower.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Where is the Asteroid Belt located?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Between Mars and Jupiter.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planets have no moons?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mercury and Venus.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What do scientists call a massive release of plasma from the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> A Coronal Mass Ejection.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which are the five most recognized dwarf planets?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Pluto, Ceres, Eris, Makemake, and Haumea.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many volcanoes are there on the surface of Venus?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> More than 1,600 volcanoes.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What protects Earth from meteoroids and radiation from the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Its atmosphere.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the oldest planet in our solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Jupiter.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first woman to travel into space?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Valentina Tereshkova.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long is a day on Jupiter?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 9 hours and 55 minutes.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long does it take the moon to orbit the Earth?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 28 days.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What color is Mars’ sunset?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Blue.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the polarity reversal of the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The solar cycle.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How old is the Universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">13.7 billion years old.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many constellations are there?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">88.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet has a hexagonal-shaped storm?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Saturn.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Why isn’t it possible to walk on Jupiter, Saturn, Uranus, or Neptune?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Because they do not have solid surfaces.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planet has the largest ocean?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Jupiter.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which star is the Alpha Ursa Minoris?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Polaris.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How long does each season last on Neptune?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">More than 40 years.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What do scientists call the disk that encircles a back hole?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Accretion Disk.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What are the storms produced by the sun called?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Solar storms.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which constellation represents a hunter and weapons?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Orion.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which is the hottest planet in the solar system?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Venus, with a surface temperature of 460 °C.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many minutes was the shortest space flight?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">15 minutes.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the only planet not named after a God?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Earth.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which astronaut is famous for having written his daughter’s initials on the moon?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Gene Cernan.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What do you call a large group of stars, dust, and gas?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">A galaxy.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many stars make up the Big Dipper?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">7 stars.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Where is the coldest place in the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">The Boomerang Nebula.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which are the most common types of galaxies in the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Elliptical galaxies.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How far away is the nearest star, not the sun?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">About 4.22 light-years from Earth.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the largest type of star in the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Red supergiant stars. They have the largest volume of all the stars in the known universe and are classified as K or M spectral types.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which planets do not have a natural satellite?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">All the planets in the solar system except Mercury and Venus have natural satellites.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the most common type of star found in the Milky Way?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Red Dwarf stars.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is at the center of the Milky Way galaxy?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">A black hole.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first female commander of the International Space Station (ISS)?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Peggy Whitson.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the unit of measurement used to describe the expansion of the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">The Hubble Constant.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which constellation holds the hottest place in the universe?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Virgo.
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the third astronaut to walk on the moon?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Pete Conrad</span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                The three main parts of a comet are the nucleus, the tail, and the _____?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The coma</span>
+        </div>
+        
+    </div>
+
+
+
+    <div style="height: 50px;">
+    </div>
+    <nav class="nav">
+        <a href="../index.html" class="nav__link">
+            <i class="material-icons nav-icon">home</i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="#search_q" class="nav__link">
+            <i class="material-icons nav-icon">search</i>
+            <span class="nav-text">Search</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">monetization_on</i>
+            <span class="nav-text">Donate</span>
+        </a>
+    </nav>
+    
+    <script src="../js/qd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/qstyle.css">
+    <link type="text/css" rel="stylesheet" href="../style/tstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="search-q">
+        
+        <div class="search-q-div">
+            <div class="s-q">           
+            <input type="text" id="search-q" placeholder="search questions" onkeyup="search_q()">
+            <i class="material-icons">search</i>
+            </div>
+        </div>
+
+        <div id="searched-questions">
+                
+        </div>
+
+    </div>
+
+    <h1>Topic name</h1>
+
+
+
+
+
+    <div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശ ദിനം എന്ന് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഏപ്രിൽ 12
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ആധുനിക ബഹിരാകാശ ശാസ്ത്രത്തിന്റെ പിതാവ് ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഗലീലിയോ ഗലീലി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തെത്തിയ ആദ്യ വ്യക്തി?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: യൂറി ഗഗാറിൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                യൂറി ഗഗാറിൻ സഞ്ചരിച്ച വാഹനം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വോസ്തോക്ക് 1
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                യൂറി ഗഗാറിൻ ഏത് രാജ്യക്കാരനാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: റഷ്യ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഇൻജെന്യൂറ്റി ഹെലികോപ്റ്റർ ഇറങ്ങിയ ആകാശ ഗോളം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ചൊവ്വ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                കിഴക്കുനിന്നും പടിഞ്ഞാറോട്ട് ഭ്രമണം ചെയ്യുന്ന ഒരേയൊരു ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ശുക്രൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്ത് നടന്ന ആദ്യ വ്യക്തി ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: അലക്സി ലിയനോവ് (1965)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്ത് നടന്ന ലോകത്തിലെ ആദ്യ വനിത?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സെറ്റിലാന വി സവിറ്റ്സ്കായ (1984, റഷ്യ)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തെത്തിയ ആദ്യ വനിത?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വാലന്റീന തെരഷ്കോവ (1963)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തെത്തിയ ആദ്യ ഇന്ത്യൻ വംശജ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കൽപ്പന ചൗള (1997)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                കൽപ്പന ചൗളയുടെ ജന്മദേശം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കർണാൻ ഹരിയാന
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തു പോയ രണ്ടാമത്തെ ഇന്ത്യൻ വംശജ ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സുനിതാ വില്യംസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സുനിത വില്യംസിനെ ബഹിരാകാശത്ത് എത്തിച്ച വാഹനം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഡിസ്കവറി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തെത്തിയ മൂന്നാമത്തെ ഇന്ത്യൻ വംശജ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സിരിഷ ബാൻഡ്ല
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                പൊട്ടിത്തെറിയിലൂടെ നശിക്കുന്ന നക്ഷത്രത്തെ വിളിക്കുന്ന പേരെന്ത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സൂപ്പർനോവ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ആധുനിക ജ്യോതിശാസ്ത്രത്തിന്റെ  പിതാവ് എന്നറിയപ്പെടുന്നത് ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: നിക്കോളാസ് കോപ്പർനിക്കസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഭൂമിയുടെ ഇരട്ട എന്നറിയപ്പെടുന്ന ഗ്രഹം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ശുക്രൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്ത് എത്തിയ ആദ്യ ഇന്ത്യക്കാരൻ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: രാകേഷ് ശർമ (1984)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                രാകേഷ് ശർമയെ ബഹിരാകാശത്ത് എത്തിച്ച വാഹനം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സോയൂസ് T -11
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്ത് ആദ്യമായി മാരത്തോൺ നടത്തിയ ഇന്ത്യൻ വനിത ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സുനിതാ വില്യംസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ആദ്യ ബഹിരാകാശ വിനോദ സഞ്ചാരി?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഡെന്നീസ് ടിറ്റോ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ആദ്യ ബഹിരാകാശ വനിതാവിനോദ സഞ്ചാരി?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: അനൗഷാ അൻസാരി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശനിലയത്തിൽ എത്തിയ ആദ്യ ഇന്ത്യൻ വനിത ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സുനിതാ വില്യംസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്ത് ഏറ്റവും അധികം നാൾ കഴിഞ്ഞ ഇന്ത്യൻ വനിത ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സുനിതാ വില്യംസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                വലിയ കറുത്ത അടയാളം കാണപ്പെടുന്ന ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: നെപ്ട്യൂൺ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                തമോഗർത്തങ്ങളെ കുറിച്ച് പഠിക്കാൻ നാസ ബഹിരാകാശത്ത് വിക്ഷേപിച്ച ടെലസ്കോപ്പ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ചന്ദ്ര എക്സ്-റേ ഒബ്സർവേറ്ററി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ഏറ്റവും പ്രായം കൂടിയ ബഹിരാകാശ യാത്രികൻ ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വില്യം ഷാട്നർ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തു നടക്കുന്ന ആദ്യ ചൈനീസ് വനിത?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വാങ് യാപിങ്‌
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                നാസ സ്ഥാപിതമായ വർഷം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: 1958
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                അമേരിക്കയുടെ ആദ്യത്തെ ബഹിരാകാശ നിലയം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സ്കൈലാബ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ടൈറ്റാനിയ ഏത് ഗ്രഹത്തിന്റെ ഉപഗ്രഹമാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: യുറാനസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശ വാഹനങ്ങളിൽ വളർത്തുന്ന സസ്യം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ക്ലോറെല്ല
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                നാസയുടെ ബഹിരാകാശ യാത്രികർ അറിയപ്പെടുന്നത് ഏത് പേരിലാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ആസ്ട്രോ നട്ട്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഭൂമിയെ പ്രദക്ഷിണം വെച്ച ആദ്യ അമേരിക്കൻ സഞ്ചാരി?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ജോൺ ഗ്ലെൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ബഹിരാകാശത്തെത്തിയ ആദ്യ ജീവി ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ലെയ്ക എന്ന നായ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലെയ്ക സഞ്ചരിച്ച വാഹനം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സ്പുടിനിക് – 2
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഒരു വാൽനക്ഷത്രത്തിൽ ഇറങ്ങിയ ആദ്യ ബഹിരാകാശ ദൗത്യം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഡീപ്പ് ഇംപാക്ട്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                യൂറോപ്യൻ സ്പേസ് ഏജൻസിയുടെ ആസ്ഥാനം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: പാരീസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും ചൂട് കൂടിയ ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ശുക്രൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                പ്രപഞ്ചത്തിന്റെ കൊളംബസ് എന്നറിയപ്പെടുന്നത് ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: യൂറി ഗഗാറിൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ആദ്യ കൃത്രിമ വാർത്താവിനിമയ ഉപഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ട്രിക്കൊ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ആദ്യത്തെ കൃത്രിമ ഉപഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സ്പുട്നിക് -1 (1957)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തെ ആദ്യത്തെ കാലാവസ്ഥ ഉപഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ട്രിറോസ്- 1
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും വലിയ ഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വ്യാഴം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും വലിയ ഉപഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഗാനിമീഡ് (വ്യാഴം)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൂര്യനോട് ഏറ്റവും അടുത്ത ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ബുധൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും ചെറിയ ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ബുധൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                വേഗതയേറിയ ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ബുധൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഇന്ത്യയുടെ ആദ്യത്തെ റോക്കറ്റ് വിക്ഷേപണ വാഹനം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: SLV – 3
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഇന്ത്യയിൽ നിന്നും വിക്ഷേപിച്ച ആദ്യ കൃത്രിമ ഉപഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: രോഹിണി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                കറുത്ത ചന്ദ്രൻ എന്നറിയപ്പെടുന്നത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഫോബോസ് (ചൊവ്വയുടെ ഉപഗ്രഹം)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഇന്ത്യയുടെ ആദ്യ കൃത്രിമ ഉപഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ആര്യഭട്ട
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ആര്യഭട്ട വിക്ഷേപിച്ച വർഷം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: 1975
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ആര്യഭട്ട വിക്ഷേപിച്ചത് എവിടെ നിന്ന്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കംപൂസ്റ്ററിൽ നിന്ന് (റഷ്യ)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                വലിയ ചുവന്ന അടയാളം കാണപ്പെടുന്നത് ഏത് ഗ്രഹത്തിൽ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വ്യാഴം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ലോകത്തിലെ ആദ്യ സ്പേസ് ഷട്ടിൽ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കൊളംമ്പിയ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സ്പേസ് ഷട്ടിൽ പൈലറ്റ് ആയ ആദ്യ വനിത?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഐലിൻ മേരി കോളിൻസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയുഥത്തിന്റെ കേന്ദ്രം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സൂര്യൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും സാന്ദ്രത കൂടിയ ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഭൂമി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഭൂമിയുടെ അപരൻ എന്നറിയപ്പെടുന്ന ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ടൈറ്റാൻ (ശനിയുടെ ഉപഗ്രഹം)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൗരയൂഥത്തിലെ ഏറ്റവും ഉയരമുള്ള പർവതം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഒളിമ്പസ് മോൺസ് (ചൊവ്വ)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ശനിയുടെ വലയങ്ങൾ കണ്ടെത്തിയത് ആരാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഗലീലിയോ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ശാസ്ത്രമാതാവ് എന്നറിയപ്പെടുന്ന ശാസ്ത്രശാഖ ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ജ്യോതിശാസ്ത്രം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ആകാശഗോളങ്ങളെ കുറിച്ചുള്ള പഠനം ഏത് പേരിൽ അറിയപ്പെടുന്നു?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ജ്യോതിശാസ്ത്രം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ജ്യോതി ശാസ്ത്രത്തിന്റെ പിതാവ് ആര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കോപ്പർനിക്കസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സ്വാതന്ത്ര്യം സമത്വം സാഹോദര്യം എന്നീ പേരുകളിൽ വലയങ്ങളുള്ള ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: നെപ്ട്യൂൺ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഇന്ത്യയുടെ കാലാവസ്ഥ ഉപഗ്രഹം ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: മെറ്റ് സാറ്റ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                മെറ്റ് സാറ്റിന്റെ പുതിയ പേര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: കല്പന-1
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഏറ്റവും തിളക്കമുള്ള ഗ്രഹം എന്നറിയപ്പെടുന്നത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ശുക്രൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ചന്ദ്രയാൻ 2 – ലാൻഡറിന്റെ പേര്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: വിക്രം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഏറ്റവും ദൈർഘ്യം കുറഞ്ഞ വർഷമുള്ള ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ബുധൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                സൂര്യനോട് ഏറ്റവും അടുത്ത ഗ്യാലക്സി ഏത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ആൻഡ്രോമേഡ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ഏതു ഗ്രഹത്തിലെ ഉപരിതല പ്രദേശങ്ങളാണ് പുരാണ സ്ത്രീകളുടെ പേരുകൾ നൽകിയിട്ടുള്ളത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ശുക്രൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Universe in an nut shell എന്നത് ആരുടെ കൃതിയാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: സ്റ്റീഫൻ ഹോക്കിങ്സ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                കുള്ളൻ ഗ്രഹം എന്നറിയപ്പെടുന്ന ഗ്രഹം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: പ്ലൂട്ടോ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                റോമാക്കാരുടെ ഏത് യുദ്ധദേവന്റെ പേരിലാണ് ചൊവ്വ ഗ്രഹത്തെ നാമകരണം ചെയ്തിട്ടുള്ളത്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: മാഴ്‌സ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ചൊവ്വ ഗ്രഹത്തിലുള്ള സൗരയുഥത്തിലെ ഏറ്റവും വലിയ അഗ്നിപർവ്വതം ഏതാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഒളിമ്പസ് മോൺസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                ചൊവ്വ ഗ്രഹത്തെ ഉപഗ്രഹങ്ങൾ ഏതെല്ലാം?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer: ഫോബോസ്, ഡെയ്മോസ്</span>
+        </div>
+        
+    </div>
+
+
+
+    <div style="height: 50px;">
+    </div>
+    <nav class="nav">
+        <a href="../index.html" class="nav__link">
+            <i class="material-icons nav-icon">home</i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="#search_q" class="nav__link">
+            <i class="material-icons nav-icon">search</i>
+            <span class="nav-text">Search</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">monetization_on</i>
+            <span class="nav-text">Donate</span>
+        </a>
+    </nav>
+    
+    <script src="../js/qd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

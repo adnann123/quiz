@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/qstyle.css">
+    <link type="text/css" rel="stylesheet" href="../style/tstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="search-q">
+        
+        <div class="search-q-div">
+            <div class="s-q">           
+            <input type="text" id="search-q" placeholder="search questions" onkeyup="search_q()">
+            <i class="material-icons">search</i>
+            </div>
+        </div>
+
+        <div id="searched-questions">
+                
+        </div>
+
+    </div>
+
+    <h1>Topic name</h1>
+
+
+
+
+
+    <div>
+        <div class="question-div">
+            <p class="question">
+                Who is the Nobel Prize named after?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Alfred Nobel
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                How many Nobel Prize categories are there?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Six
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the name for someone who has won a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Nobel Laureate
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first woman to win a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Marie Curie
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What category did Albert Einstein win his Nobel Prize in?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Physics
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What currency is the prize money for the Nobel Prize awarded in?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">  Swedish Kronor
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which of the following is a real Nobel Prize category?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">  Economic Science
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the highest number of Nobel Prizes that a single individual has been awarded?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">  2
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which singer songwriter won the Nobel Prize for Literature in 2016?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">  Bob Dylan
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Albert Mechelson was the first American to win a Nobel Prize, but what did he win it for?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Measuring the speed of light
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which of the following groups has won the Nobel Peace Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The European Union
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What year were the first Nobel Prizes awarded?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 1901
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What did the creator of the Nobel Prize invent that lead him to seek a better legacy for himself through the awards?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Dynamite
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which Nobel Prize category has had the highest percentage of female winners (though that’s still only 16%)?      
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Peace
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first Black person to win a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Ralph Bunche
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who won the Nobel Peace Prize alongside Nelson Mandela in 1993?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> F.W. De Klerk
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which Nobel Prize category was first introduced in 1969?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Economic Science
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who is the only UN Secretary General to have won a Nobel Peace Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Kofi Annan
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which was the only Nobel Prize category to have a female winner in 2021?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Peace
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which Belarusian journalist won the Nobel Prize for Literature in 2015 for her ‘polyphonic writings, a monument to suffering and courage in our time’?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Svetlana Alexievich
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                British Physicist Lord Rayleigh won the Nobel Prize in 1904 discovering which element?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Argon
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which French writer turned down a Nobel Prize in 1964 because he didn’t want to be ‘institutionalised’?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> John-Paul Sartre
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first author writing in English to win a Nobel Prize in Literature?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Rudyard Kipling
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                In what year did Michael Houghton, Charles M. Rice and Harvey J. Atler win the Nobel Prize in Physiology or Medicine for discovering the Hepatitis C virus?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> 2020
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Linus Pauling is one of the only people to have won the Nobel Prize twice, winning the award once in Peace and once in what other category?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Chemistry
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                In 2022, Svante Pääbo won the Nobel Prize in Physiology or Medicine for his work uncovering the genomes of extinct hominids. Which species of early man does his research specialise in?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Neanderthals
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                The Nobel Prize awards ceremony takes place each year on the 10th of December, marking the anniversary or what?  
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The Death of Alfred Nobel
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the first American President to win a Nobel Peace Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Theodore Roosevelt
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                James Chadwick won the Nobel Prize in Physics in 1935 for the discovery of which subatomic particle?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The neutron
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who was the only leader of the Soviet Union to win a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Mikhail Gorbachev
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which NGO won the Nobel Peace Prize in 1977 for ‘worldwide respect for human rights’?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Amnesty International
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which of the following books was written by Nobel Prize in Literature winner Kazuo Ishiguro?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Klara and the Sun
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                In 1902, British-Indian doctor Ronald Ross won the Nobel Prize in Medicine for his research on which disease?    
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Malaria
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which Nobel Prize category has had the lowest percentage of female winners?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Physics
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Who is the most recent US President to have won a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Barack Obama
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Winning her award at just 17, who is the youngest person to have ever been awarded a Nobel Prize?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Malala Yousafzai
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                What is the only Nobel Prize category not presented at Stockholm City Hall?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Peace
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                Which country has produced the highest number of Nobel Prize winners?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> The United States
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                In 1958, Boris Pasternak was forced by the Soviet authorities to turn down the Nobel Prize for literature. Which book is he most famous for?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans"> Dr. Zhivago
+        </span>
+        </div>
+    </div>
+
+
+
+    <div style="height: 50px;">
+    </div>
+    <nav class="nav">
+        <a href="../index.html" class="nav__link">
+            <i class="material-icons nav-icon">home</i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="#search_q" class="nav__link">
+            <i class="material-icons nav-icon">search</i>
+            <span class="nav-text">Search</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">monetization_on</i>
+            <span class="nav-text">Donate</span>
+        </a>
+    </nav>
+    
+    <script src="../js/qd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

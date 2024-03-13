@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../style/qstyle.css">
+    <link type="text/css" rel="stylesheet" href="../style/tstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="search-q">
+        
+        <div class="search-q-div">
+            <div class="s-q">           
+            <input type="text" id="search-q" placeholder="search questions" onkeyup="search_q()">
+            <i class="material-icons">search</i>
+            </div>
+        </div>
+
+        <div id="searched-questions">
+                
+        </div>
+
+    </div>
+
+    <h1>Python MCQ</h1>
+
+
+
+
+
+    <div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യ ബ്രിട്ടീഷ് ഭരണത്തിൽ നിന്നും മോചിതമായി ഒരു പരമോന്നത റിപ്പബ്ലിക് ആയതെന്നാണ് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1950 ജനുവരി 26 ന്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ പരമോന്നത ഭരണ ഘടന നിലവിൽ വന്നത് വർഷം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1950 ജനുവരി 26
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയഗാനം ഏത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ജനഗണമന
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ ഗാനം പാടാൻ എടുക്കുന്ന സമയം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  52 സെക്കൻഡ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ തലസ്ഥാനം ഏത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ന്യൂഡൽഹി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ലോകത്തിലെ ഏറ്റവും വലിയ ജനാധിപത്യ രാജ്യമേത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഇന്ത്യ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 റിപ്പബ്ലിക് എന്ന ആശയം ഇന്ത്യ കടമെടുത്തത് ഏത് രാജ്യത്തു നിന്നാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഫ്രാൻസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 റിപ്പബ്ലിക് ദിനത്തിന് സംസ്ഥാന തലസ്ഥാനങ്ങളിൽ ദേശീയ പതാക ഉയർത്തുന്നത് ആരാണ് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഗവർണർ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 'സത്യമേവ ജയതേ' എന്ന് രേഖപ്പെടുത്തിയത് ഏത് ലിപിയിലാണ്?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ദേവനാഗരി ലിപി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 'സത്യമേവ ജയതേ' എന്ന വാക്യം ഏത് ഉപനിഷത്തിൽ നിന്നാണ് എടുത്തിട്ടുള്ളത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  മുണ്ഡകോപനിഷത്ത്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ പതാക രൂപകൽപന ചെയ്ത‌ത് ആര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  പിങ്കലി വെങ്കയ്യ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യക്ക് സ്വാതന്ത്യം ലഭിച്ചെങ്കിലും 1947 മുതൽ 1950 വരെയുള്ള കൈമാറ്റ കാലയളവിൽ ആരായിരുന്നു ഇന്ത്യയുടെ ഭരണ                   ണ തലവൻ ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ജോർജ്ജ് നാലാമൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 1950 ജനുവരി 26 ന് ഇന്ത്യയുടെ ആദ്യത്തെ രാഷ്ട്രപതിയായി തിരഞ്ഞെടുക്കപ്പെട്ടതാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഡോ. രാജേന്ദ്രപ്രസാദ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യൻ സൈന്യത്തിൻ്റെ പരമോന്നത നേതാവ് ആര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  രാഷ്ട്രപതി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ആദ്യത്തെ ഉപരാഷ്ട്രപതി ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  സർവേപ്പള്ളി രാധാകൃഷ്ണൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയമുദ്ര ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  സിംഹമുദ്ര
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഏത് ചക്രവർത്തിയുടെ കാലത്ത് സൃഷ്ടിച്ച സ‌ംഭത്തിൽ നിന്നും കടംകൊണ്ടതാണ് അശോകമുദ്ര അഥവാ അശോകസ്‌തംഭം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  അശോക ചക്രവർത്തി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയഗാനം രചിച്ചതാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  രവീന്ദ്രനാഥ ടാഗോർ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ജനഗണമന ദേശീയഗാനമായി അംഗീകരിച്ച വർഷം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1950 ജനുവരി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 വന്ദേമാതരം എന്ന ഇന്ത്യയുടെ ദേശീയ ഗീതം രചിച്ചതാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ബങ്കിം ചന്ദ്ര ചാറ്റർജി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 സാരെ ജഹാൻ സെ അച്ഛാ എന്ന ഗാനം രച്ചിച്ചതാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  മുഹമ്മദ് ഇക്ബാൽ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ മൃഗം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  കടുവ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയമൃഗത്തെ തിരഞ്ഞെടുത്ത വർഷം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1972-ൽ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 മയിലിനെ ദേശീയ പക്ഷിയായി തന്നെ തിരഞ്ഞെടുത്ത വർഷം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1964-ൽ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ പുഷ്‌പം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  താമര
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ വൃക്ഷം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  പേരാൽ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ ഫലം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  മാങ്ങ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ ജലജീവി ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  2009-ൽ സുസു എന്ന ശുദ്ധജല ഡോൾഫിൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ഇന്ത്യയുടെ ദേശീയ പഞ്ചാംഗം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ശകവർഷം
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ശകവർഷത്തെ ദേശീയ പഞ്ചാംഗമാക്കിയത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  1957 മാർച്ച് 22
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ക്രി.വ. 78-ൽ ഭാരതത്തിൻ്റെ ദേശീയ പഞ്ചാംഗമായ ശകവർഷംൻ തുടങ്ങിയതാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  കുഷാന (കുശാന) രാജാവായിരുന്ന കനിഷ്‌കൻ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 രാജ്യത്തിന്റെ്റെ തലവൻ ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  രാഷ്ട്രപതി (പ്രസിഡന്റ്)
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 സർക്കാരിൻ്റെ തലവൻ ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  പ്രധാനമന്ത്രി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ലോകത്തിലെ ഏറ്റവും ജനാധിപത്യ വ്യവസ്ഥിതി നിലനിൽക്കുന്ന രാജ്യം ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഇന്ത്യ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 രാഷ്ട്രപതിയുടെ ഔദ്യോഗിക വസതിയായ രാഷ്ട്രപതിഭവൻ സ്ഥിതി ചെയ്യുന്നത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ന്യൂ ഡൽഹിയിലെ റെയ്‌സീന കുന്നുകളിൽ
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 രാഷ്ട്രപതിയുടെ ഔദ്യോഗിക വസതി രൂപകല്പന ചെയ്ത‌തത്‌ ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  സർ എഡ്വിൻ ലുറ്റ്യൻസ്
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 ചുവപ്പു കോട്ട അഥവാ ചെങ്കോട്ട പണി കഴിപ്പിച്ചതാാര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  ഷാജഹാൻ ചക്രവർത്തി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 സുപ്രീംകോടതിയിലേയും ഹൈക്കോടതിയിലേയും ജഡ്‌ജിമാരെ നിയമിക്കുന്നത് ആര് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  രാഷ്ട്രപതി
+        </span>
+        </div>
+        <div class="question-div">
+            <p class="question">
+                 പ്രധാനമന്ത്രി, കേന്ദ്രമന്ത്രിമാർ, സംസ്ഥാന ഗവർണർമാർ, തിരഞ്ഞെടുപ്പ് കമ്മീഷൻ, ചെയർമാൻ, യു.പി.എസ്.സി., ചെയർമാ              ാൻ, സൈനിക മേധാവികൾ, സുപ്രീം കോടതി - ഹൈക്കോടതി ജഡ്‌ജിമാർ തുടങ്ങിയവരെയെല്ലാം നിയമിക്കുന്നത് ?
+            </p>
+            <button class="ans-button" onclick="showAns(this)">Answer</button>
+            <span class="ans">Answer:  രാഷ്ട്രപതി</span>
+        </div>        
+    </div>
+
+
+
+    <div style="height: 50px;">
+    </div>
+    <nav class="nav">
+        <a href="../index.html" class="nav__link">
+            <i class="material-icons nav-icon">home</i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="#search_q" class="nav__link">
+            <i class="material-icons nav-icon">search</i>
+            <span class="nav-text">Search</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav-icon">monetization_on</i>
+            <span class="nav-text">Donate</span>
+        </a>
+    </nav>
+    
+    <script src="../js/qd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
